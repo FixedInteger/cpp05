@@ -1,5 +1,6 @@
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
+class Bureaucrat;
 
 //######## Default Constructor ######## //
 
@@ -47,6 +48,7 @@ int Form::getGradeToExecute() const
 {
     return (this->gradeToExecute);
 }
+
 
 //######## exceptions ######## //
 

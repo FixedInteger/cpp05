@@ -32,6 +32,7 @@ class Bureaucrat
                 const char *what() const throw();
         };
         ~Bureaucrat();
+        void executeForm(AForm const &form);
 };
 std::ostream &operator<<(std::ostream &out, Bureaucrat const &b); 
 

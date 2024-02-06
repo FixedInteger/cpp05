@@ -2,9 +2,8 @@ NAME = ex02
 CPP = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Bureaucrat.cpp  AForm.cpp 
-INC = Bureaucrat.hpp AForm.hpp
-
+SRC = main.cpp Bureaucrat.cpp  AForm.cpp  ShrubberyCreationForm.cpp RobotomyRequestForm.cpp 
+INC = Bureaucrat.hpp AForm.hpp ShrubberyCreationForm.hpp  RobotomyRequestForm.hpp 
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

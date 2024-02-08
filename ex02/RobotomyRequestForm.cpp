@@ -34,11 +34,11 @@ RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45
 void RobotomyRequestForm::execute(Bureaucrat const &executor) const
 {
     AForm::execute(executor);
-    std::cout << "Bzzzz "<< std::endl;
+    std::cout << "Bzzzzzzzz" << std::endl;
     if (rand() % 2 == 0)
         std::cout << this->target << " has been robotomized successfully" << std::endl;
     else
-        std::cout << this->target << " robotomization failed" << std::endl;
+        std::cout << this->target << " robotomization failed because of a bad luck" << std::endl;
 }
 
 //######## getters and setters ######## //

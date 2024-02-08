@@ -42,7 +42,7 @@ class AForm
     };
     virtual void execute(Bureaucrat const &executor) const = 0;
     void action() const;
-    ~AForm();
+    virtual ~AForm();
 };
 
 std::ostream &operator<<(std::ostream &out, AForm const &f);

@@ -1,9 +1,23 @@
-NAME = ex02
+NAME = ex03
 CPP = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Bureaucrat.cpp  AForm.cpp  ShrubberyCreationForm.cpp RobotomyRequestForm.cpp  PresidentialPardonForm.cpp
-INC = Bureaucrat.hpp AForm.hpp ShrubberyCreationForm.hpp  RobotomyRequestForm.hpp  PresidentialPardonForm.cpp
+SRC =	main.cpp\
+		Bureaucrat.cpp\
+		AForm.cpp \
+		ShrubberyCreationForm.cpp\
+		RobotomyRequestForm.cpp\
+		PresidentialPardonForm.cpp\
+		Intern.cpp\
+
+INC =	Bureaucrat.hpp\
+		AForm.hpp\
+		ShrubberyCreationForm.hpp\
+		RobotomyRequestForm.hpp\
+		PresidentialPardonForm.hpp\
+		intern.hpp\
+
+
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -21,4 +35,3 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
-

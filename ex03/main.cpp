@@ -2,13 +2,15 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 #include <iostream>
-// void leaks()
-// {
-//     system("leaks ex02");
-// } 
+void leaks()
+{
+    system("leaks ex03");
+} 
 int main(int ac , char **av)
 {
+    std::atexit(leaks);
     if (ac != 2)
     {
         std::cout << "Usage: ./ex02 [filename]" << std::endl;
@@ -16,6 +18,12 @@ int main(int ac , char **av)
     }
     try
     {
+        Intern hh;
+        AForm *hl;
+
+        hl  = hh.makeForm("robotomy request","ll");
+        delete hl;
+
         {
             //shrubbery creation form scope
             Bureaucrat b("hamid",137);
